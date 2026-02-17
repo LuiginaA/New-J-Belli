@@ -2,37 +2,34 @@
 <html lang="en">
   
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Dr Janique - Conditions Treated</title>
+    <title>Dr Janique - Chiropractic Care</title>
 
-  <!-- ✅ Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
 
-  <!-- ✅ Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- ✅ Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <!-- ✅ Ionicons -->
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- ✅ Ionicons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
-  <!-- ✅ Hover effects -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <!-- ✅ AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
-  <!-- ✅ AOS Animation CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-
-  <!-- ✅ Your custom styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
-  
+    <!-- ✅ Your custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
 
-    <!-- 🔝 SIMPLIFIED TOP BAR & NAVIGATION -->
+<!-- 🔝 SIMPLIFIED HEADER & NAVIGATION -->
 <header class="fixed-top">
     
-    <!-- Single Top Bar - Simplified -->
+<!-- Single Top Bar -->
     <div class="top-bar">
         <div class="top-bar-content">
             <a href="tel:+27835724444">
@@ -45,14 +42,17 @@
         </div>
     </div>
 
-    <!-- Main Navigation -->
+<!-- Main Navigation -->
     <nav class="navbar navbar-expand-lg">
         <div class="container">
             
-            <!-- Logo & Name -->
+            <!-- Logo, Name & Practice Name -->
             <a class="navbar-brand" href="index.html">
                 <img src="assets/image/logo.png" alt="Dr Janique Logo" class="logo-img">
-                <h5 class="titleName">Dr Janique Belli</h5>
+                <div class="brand-text">
+                    <h5 class="titleName">Dr Janique Belli</h5>
+                    <p class="practice-name">The Chiro Wellness Connection</p>
+                </div>
             </a>
 
             <!-- Mobile Toggle Button -->
@@ -83,7 +83,7 @@
         </div>
     </nav>
 
-    <!-- Registration Bar -->
+<!-- Registration Bar -->
     <div class="registration-bar">
         <p class="registration-text">
             <strong>REGISTERED CHIROPRACTOR:</strong> (CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196
@@ -93,425 +93,510 @@
 </header>
 
 <main>
+
 <!-- 🎯 HERO SECTION -->
 <section class="hero">
     <div class="hero-content">
         
-        <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
-            <h1>Feel Better Naturally</h1>
-            <h2>Drug-Free Chiropractic Care for the Whole Family</h2>
-            <p>
-                From pregnancy to sports injuries, headaches to back pain—Dr Janique provides gentle, 
-                effective care that helps your body heal naturally.
-            </p>
+        <div class="hero-text">
             
-            <div class="hero-buttons">
-                <a href="contact.html" class="btn-primary">Book Appointment</a>
-                <a href="conditions-treated.html" class="btn-secondary">What We Treat</a>
+            <h3 data-aos="fade-right" data-aos-duration="1000">
+                "A bright smile lights up your face,<br>When your bones are in place!"
+            </h3>
+
+            <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="200">
+                You Deserve to Feel Better!
+            </h1>
+            
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                Experience gentle, effective chiropractic care that helps your whole family 
+                move better, feel better, and live better—naturally.
+            </p>
+
+            <div class="appointment-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <a href="contact.html" class="btn-book-cta">
+                    <i class="fas fa-calendar-check"></i> Book Appointment
+                </a>
+
+                <a href="conditions-treated.html" class="btn-call-cta">What We Treat
+                </a>
             </div>
+
+            <p class="hero-quote" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="800">
+                <em>"The sky has never been the limit. We are our own limits. 
+                It's about breaking our personal limits and outgrowing ourselves to live our best lives."</em>
+                <span>~ Author Unknown</span>
+            </p>
         </div>
 
-        <div class="hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+        <div class="hero-image" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1400" data-aos-delay="400">
             <picture>
                 <source srcset="assets/image/skeleton-Janique1.avif" type="image/avif">
                 <source srcset="assets/image/skeleton-Janique.webp" type="image/webp">
-                <img src="assets/image/skeleton-Janique1.png" alt="Chiropractic care illustration"> 
+                <img src="assets/image/skeleton-Janique1.png" alt="Friendly skeleton mascot"> 
             </picture>
         </div>
 
     </div>
 </section>
 
-<!-- 🩺 WHAT WE TREAT SECTION -->
-<section class="what-we-treat">
-    <div class="what-we-treat-container">
-        
-        <div class="section-header" data-aos="fade-up">
-            <h2>What We Treat</h2>
-            <p>Dr Janique provides effective care for a wide range of conditions. Click any card to learn more.</p>
-        </div>
-
-        <div class="treatment-grid">
-
-            <!-- Card 1: Back Pain -->
-            <div class="treatment-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="card-icon">
-                    <i class="fas fa-spine"></i>
-                </div>
-                <h3>Back Pain</h3>
-                <p>Relief from lower and upper back discomfort</p>
-                <a href="conditions-treated.html#back-pain" class="card-link">Learn More</a>
-            </div>
-
-            <!-- Card 2: Neck Pain -->
-            <div class="treatment-card" data-aos="fade-up" data-aos-delay="150">
-                <div class="card-icon">
-                    <i class="fas fa-head-side-cough"></i>
-                </div>
-                <h3>Neck Pain</h3>
-                <p>Restore mobility and reduce stiffness</p>
-                <a href="conditions-treated.html#neck-pain" class="card-link">Learn More</a>
-            </div>
-
-            <!-- Card 3: Headaches -->
-            <div class="treatment-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="card-icon">
-                    <i class="fas fa-head-side-virus"></i>
-                </div>
-                <h3>Headaches</h3>
-                <p>Address tension headaches naturally</p>
-                <a href="conditions-treated.html#headaches" class="card-link">Learn More</a>
-            </div>
-
-            <!-- Card 4: Sports Injuries -->
-            <div class="treatment-card" data-aos="fade-up" data-aos-delay="250">
-                <div class="card-icon">
-                    <i class="fas fa-running"></i>
-                </div>
-                <h3>Sports Injuries</h3>
-                <p>Get back in the game faster</p>
-                <a href="conditions-treated.html#accident-injuries" class="card-link">Learn More</a>
-            </div>
-
-            <!-- Card 5: Pregnancy Care -->
-            <div class="treatment-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="card-icon">
-                    <i class="fas fa-baby"></i>
-                </div>
-                <h3>Pregnancy Care</h3>
-                <p>Gentle support for expecting mothers</p>
-                <a href="conditions-treated.html#pregnancy-babies" class="card-link">Learn More</a>
-            </div>
-
-            <!-- Card 6: Children & Teens -->
-            <div class="treatment-card" data-aos="fade-up" data-aos-delay="350">
-                <div class="card-icon">
-                    <i class="fas fa-child"></i>
-                </div>
-                <h3>Children & Teens</h3>
-                <p>Supporting healthy growth and development</p>
-                <a href="conditions-treated.html#children" class="card-link">Learn More</a>
-            </div>
-
-            <!-- Card 7: Whiplash -->
-            <div class="treatment-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="card-icon">
-                    <i class="fas fa-car-crash"></i>
-                </div>
-                <h3>Whiplash</h3>
-                <p>Recovery from accident injuries</p>
-                <a href="conditions-treated.html#whiplash" class="card-link">Learn More</a>
-            </div>
-
-            <!-- Card 8: Joint Pain -->
-            <div class="treatment-card" data-aos="fade-up" data-aos-delay="450">
-                <div class="card-icon">
-                    <i class="fas fa-bone"></i>
-                </div>
-                <h3>Joint Pain</h3>
-                <p>Hip, knee, shoulder, and ankle care</p>
-                <a href="conditions-treated.html#extremities" class="card-link">Learn More</a>
-            </div>
-
-        </div>
-
-        <!-- View All Link -->
-        <div class="view-all-treatments" data-aos="fade-up" data-aos-delay="500">
-            <a href="conditions-treated.html" class="btn-view-all">View All Conditions We Treat</a>
-        </div>
-
-    </div>
-</section>
-
-<!-- 🛡️ WHY CHOOSE DR JANIQUE SECTION -->
-<section class="why-choose">
-    <div class="why-choose-container">
-        
-        <div class="section-header" data-aos="fade-up">
-            <h2>Why Choose Dr Janique</h2>
-            <p>Safe, effective, natural care for your whole family</p>
-        </div>
-
-        <div class="why-choose-grid">
-
-            <!-- Card 1: Safe for All -->
-            <div class="why-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="why-card-image">
-                    <img src="assets/image/safe.jpg" alt="Safe chiropractic care">
-                </div>
-                <div class="why-card-content">
-                    <h3>Safe for All!</h3>
-                    <ul>
-                        <li>Safe for the whole family</li>
-                        <li>Infants, seniors and athletes</li>
-                        <li>Special care for pregnant women and children</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Card 2: Drug Free -->
-            <div class="why-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="why-card-image">
-                    <img src="assets/image/drug-free.jpg" alt="Drug-free treatment">
-                </div>
-                <div class="why-card-content">
-                    <h3>Drug Free!</h3>
-                    <ul>
-                        <li>No need for any medication</li>
-                        <li>It's completely 100% drug-free</li>
-                        <li>Chiropractic care can reduce medication use</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Card 3: No Surgery -->
-            <div class="why-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="why-card-image">
-                    <img src="assets/image/surgery.jpg" alt="No surgery needed">
-                </div>
-                <div class="why-card-content">
-                    <h3>No Surgery!</h3>
-                    <ul>
-                        <li>No surgery or invasive treatment</li>
-                        <li>No incisions or tissue removal</li>
-                        <li>Holistic, gentle care</li>
-                    </ul>
-                </div>
-            </div>
-
-            <!-- Card 4: Medical Aid -->
-            <div class="why-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="why-card-image">
-                    <img src="assets/image/medical-aid.jpg" alt="Medical aid accepted">
-                </div>
-                <div class="why-card-content">
-                    <h3>Medical Aid!</h3>
-                    <ul>
-                        <li>Contracted with most major medical aids</li>
-                        <li>Feel free to confirm if unsure</li>
-                        <li>Fees aligned with medical aid tariff rates</li>
-                    </ul>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
 <!-- 👩‍⚕️ MEET DR JANIQUE SECTION -->
-<section class="meet-dr-janique">
-    <div class="meet-container">
-        
-        <div class="meet-image" data-aos="fade-right" data-aos-duration="1000">
-            <picture>
-                <source srcset="assets/image/jani.avif" type="image/avif">
-                <source srcset="assets/image/jani.webp" type="image/webp">
-                <img src="assets/image/jani.jpg" alt="Dr Janique Belli">
-            </picture>
-        </div>
+<section class="intro">
+    <div class="circle"></div>
 
-        <div class="meet-content" data-aos="fade-left" data-aos-duration="1000">
-            <h2>Meet Dr Janique</h2>
-            <h3>Your Dedicated Chiropractor</h3>
-            
+    <div class="intro-image" data-aos="zoom-in" data-aos-duration="1200">
+        <picture>
+            <source srcset="assets/image/jani.avif" type="image/avif">
+            <source srcset="assets/image/jani.webp" type="image/webp">
+            <img src="assets/image/jani.jpg" alt="Dr Janique" width="400" height="450">
+        </picture>
+    </div>
+
+    <div class="intro-text">
+
+        <h2 data-aos="fade-down" data-aos-duration="1000">
+            Hello, I am <br><span>Dr Janique</span>
+        </h2>
+        
+        <h3 class="text-animation" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="200">
+            Your dedicated <span class="typing-text">Chiropractor</span>
+        </h3>
+
+        <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
             <p>
                 I earned my Master's Degree in Chiropractic from the University of Johannesburg, 
-                accredited by the European Council of Chiropractic. I am registered with the Allied 
-                Health Professions Council of South Africa (AHPCSA) and am a member of the Chiropractic 
-                Association of South Africa (CASA).
+                accredited by the European Council of Chiropractic.
             </p>
-            
             <p>
-                My approach combines advanced chiropractic techniques with genuine care for each patient. 
-                I specialize in pregnancy and pediatric care, and I'm passionate about helping families 
-                achieve optimal health naturally.
+                I am registered with the Allied Health Professions Council of South Africa (AHPCSA) 
+                and am a member of the Chiropractic Association of South Africa (CASA).
+            </p>
+            <p>   
+                My approach combines advanced techniques with genuine care for each patient. 
+                I specialize in pregnancy and pediatric care, and I'm passionate about helping 
+                families achieve optimal health naturally.
             </p>
             
-            <a href="about.html" class="btn-learn-more">Learn More About My Approach</a>
-        </div>
-
-    </div>
-</section>
-
-<!-- 🏠 HOUSE RULES SECTION -->
-<section class="house-rules">
-    <div class="house-rules-container">
-        
-        <div class="section-header" data-aos="fade-up">
-            <h2>House Rules</h2>
-            <p>Everything you need to know before your visit</p>
-        </div>
-
-        <div class="rules-grid">
-
-            <!-- Card 1: Practice Hours -->
-            <div class="rule-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="rule-icon">
-                    <ion-icon name="alarm-outline"></ion-icon>
-                </div>
-                <div class="rule-content">
-                    <h3>Practice Hours</h3>
-                    <p><strong>Monday - Friday</strong><br>08:00 - 17:00</p>
-                    <p><strong>Saturday</strong><br>09:00 - 12:00</p>
-                    <p class="rule-note">Please book an appointment to guarantee a suitable time!</p>
-                </div>
-            </div>
-
-            <!-- Card 2: Consult Rates -->
-            <div class="rule-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="rule-icon">
-                    <ion-icon name="cash-outline"></ion-icon>
-                </div>
-                <div class="rule-content">
-                    <h3>Consult Rates</h3>
-                    <p>Rates are in line with Chiropractic Medical Aid Tariffs.</p>
-                    <p>You are personally responsible for full settlement of your account. You're welcome to submit your invoice to your Medical Aid for reimbursement.</p>
-                </div>
-            </div>
-
-            <!-- Card 3: Payment Methods -->
-            <div class="rule-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="rule-icon">
-                    <ion-icon name="card-outline"></ion-icon>
-                </div>
-                <div class="rule-content">
-                    <h3>Payment Methods</h3>
-                    <p>Cash and Card payments (Visa/Mastercard).</p>
-                    <p>EFT payments must be made before the appointment, with proof of payment either emailed or brought to your consultation. Banking details available on request.</p>
-                </div>
-            </div>
-
-            <!-- Card 4: Cancellations -->
-            <div class="rule-card" data-aos="fade-up" data-aos-delay="400">
-                <div class="rule-icon">
-                    <ion-icon name="hourglass-outline"></ion-icon>
-                </div>
-                <div class="rule-content">
-                    <h3>Cancellations</h3>
-                    <p>Missed appointments or cancellations made less than 24 hours in advance will be charged in full.</p>
-                    <p class="rule-note">Your consideration is greatly appreciated.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </div>
-</section>
-
-<!-- 📅 APPOINTMENT CTA SECTION -->
-<section class="appointment-cta">
-    <div class="appointment-container">
-        
-        <div class="appointment-content" data-aos="zoom-in" data-aos-duration="1000">
-            <h2>Ready to Feel Better?</h2>
-            <h3>"Claim The Care You Deserve!"</h3>
-            <p>
-                Dr Janique or her staff will be happy to assist you.<br>
-                WhatsApp or message on <strong>+27 83 572 4444</strong>
-            </p>
-            
-            <div class="appointment-buttons">
-                <a href="contact.html" class="btn-book-now">Book Appointment</a>
-                <a href="tel:+27835724444" class="btn-call-now">
-                    <i class="fas fa-phone"></i> Call Now
+            <div class="appointment-buttons" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600">
+                <a href="abour.html" class="btn-book-cta"> Learn More About My Approach
                 </a>
             </div>
         </div>
-
     </div>
 </section>
 
-<!-- ⭐ TESTIMONIALS SECTION -->
-<section class="testimonials">
-    <div class="testimonials-container">
-        
-        <div class="section-header" data-aos="fade-up">
-            <h2>What Our Patients Say</h2>
-            <p>Real stories. Real healing. Real results.</p>
+<!-- 👨‍👩‍👧‍👦 WHY FAMILIES TRUST WITH ANIMATED SQUARES -->
+<section class="containerChoose"> 
+    <div class="cont-choose">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>  
+
+        <div class="boxChoose">
+
+            <!-- Animated squares -->
+            <div class="square" style="--i:0"></div>
+            <div class="square" style="--i:1"></div>
+            <div class="square" style="--i:2"></div>
+            <div class="square" style="--i:3"></div>
+            <div class="square" style="--i:4"></div>
+
+            <!-- Text Content -->
+            <div class="cont-choose-content"> 
+                <div class="contChoose"> 
+                    <div class="row justify-content-center">
+                        <div class="col-lg-9 why-heading">
+                        <!-- <div class="col-lg-9 why-heading" data-aos="zoom-in" data-aos-duration="1000"> -->
+                            <h2>Why Families Trust <br>Dr Janique!</h2> 
+                    
+                            <div class="why-paragraph">
+                                <p class="text-center">
+                                    Chiropractic care can help with an array of symptoms and conditions and 
+                                    has drastically improved patients' quality of life and well-being.
+                                </p>   
+                                <p>
+                                    Dr Janique is focused on the health and wellness of the whole family—from 
+                                    infants to the elderly, including athletes and sportsmen.
+                                </p>
+                                <p>
+                                    She specializes in the care of pregnant mothers and children of all ages.
+                                </p>
+                                <h6 class="text-center">
+                                    Come in as a family—Dr Janique would love to welcome you!
+                                </h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
+    </div>
+</section>
 
-        <div class="testimonials-grid">
+<!-- 📣 POP SLOGAN SECTION -->
+<section class="slogan-section">
+    <div class="slogan-container" data-aos="zoom-in" data-aos-duration="1000">
+        
+        <h3>Empower Yourself By Achieving Optimal Health!</h3>
 
-            <!-- Testimonial 1 -->
-            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
-                <div class="testimonial-image">
+        <div class="slogan-content">
+            <h5>It is about time you felt good again...</h5> 
+            <h4>Let Dr Janique</h4> 
+            
+            <div class="pop-letters">
+                <h2>
+                    <span class="pop-quote">"</span>
+                    <span class="pop-letter">P</span>
+                    <span class="pop-letter">O</span>
+                    <span class="pop-letter">P</span>
+                    <span class="pop-quote">"</span>
+                </h2> 
+            </div>
+            
+            <h5>you back into shape!</h5>
+        </div>
+                                            
+    </div>
+</section>
+
+<!-- 🩺 Reasons Why Choose Dr Janique Section -->
+
+<section class="container-fluid container-reason expand-lg">
+    <div class="contReason"> 
+        <div class="row justify-content-center">
+            <div class="reason-heading">
+                <h2>Why Choose Dr Janique!</h2>
+                <h6>Safe, effective, natural care for your whole family</h6>
+                <div class="reason-paragraph">
+                    <p>
+                        Chiropractic care can help address a wide range of symptoms and conditions, significantly improving patients’ quality of life and overall well‑being.
+                    </p>
+                </div>
+            </div>
+        </div> 
+    </div>
+
+<!-- 🛡️ Safe, 💊 Drug-Free, 👨‍⚕️ Surgery, 🏥 Medical Aid -->
+
+    <div id="reason">
+        <div class="container-fluid reason-cont expand-lg">
+            <div class="reason-why">  
+
+<!-- 🛡️ Safe -->
+
+                <div class="card-reasonInfo">
+                    <div class="imgReason"> 
+                        <img class="imgReason" src="assets/image/safe.jpg" alt="safe">    
+                    </div>
+                    <div class="reason-content">
+                        <span class="reason-title">
+                            <a href="#">Safe for All!</a>
+                        </span>
+                        <ul>
+                            <li>Safe for the whole family.</li>
+                            <li>Infants,seniors and athletes.</li>
+                            <li>Special care for pregnant women and children.</li>
+                        </ul>
+                    </div>
+                </div>
+
+<!-- 💊 Drug-Free -->
+
+                <div class="card-reasonInfo">
+                    <div class="imgReason">
+                        <img class="imgReason" src="assets/image/drug-free.jpg" alt="drug-free">
+                    </div>
+                    <div class="reason-content">
+                        <span class="reason-title">
+                            <a href="#">Drug Free!</a>
+                        </span>
+                        <ul>
+                            <li>No need for any medication.</li>
+                            <li>It's completely 100% drug-free.</li>
+                            <li>Chiropractic care can reduce medication use.</li>
+                        </ul>
+                    </div>
+                </div>
+
+<!-- 👨‍⚕️ Surgery-Free -->
+
+                <div class="card-reasonInfo">
+                    <div class="imgReason">
+                        <img class="imgReason" src="assets/image/surgery.jpg" alt="surgery">
+                    </div>
+                    <div class="reason-content">
+                        <span class="reason-title">
+                            <a href="#">No Surgery!</a>
+                        </span>
+                        <ul>
+                            <li>No surgery or invasive treatment.</li>
+                            <li>No incisions or tissue removal.</li>
+                            <li>Holistic, gentle care.</li>
+                        </ul>
+                    </div>
+                </div>
+
+<!-- 🏥 Medical Aid -->
+
+                <div class="card-reasonInfo">
+                    <div class="imgReason">
+                        <img class="imgReason" src="assets/image/medical-aid.jpg" alt="medical-aid">
+                    </div>
+                    <div class="reason-content">
+                        <span class="reason-title">
+                            <a href="#">Medical Aid!</a>
+                        </span>
+                        <ul>
+                            <li>
+                                The Practice is contracted with most major medical aids
+                            </li>
+                            <li>
+                                If unsure, feel free to confirm.
+                            </li> 
+                            <li>
+                                Consultation fees are aligned with medical aid tariff rates.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🏠 HOUSE RULES SECTION HEADER -->
+
+<section class="container-fluid expand-lg house-contain" id="house-page">
+    <div class="row justify-content-center">
+        <div class="col-8 ruleHeading">
+            <h2>House Rules </h2>
+            <p>Everything you need to know before your visit</p> 
+        </div>
+    </div>
+
+<!-- 🏠 House Rules Section -->
+
+<div class="container-house-rules">
+    <div class="container-rules">
+
+<!-- ⏰ Card 1: Hours -->  
+
+    <div class="card">
+        <div class="rule-icon">
+            <ion-icon name="alarm-outline"></ion-icon>
+        </div>
+        <div class="content-rule">
+            <h5>Practice Hours:</h5>
+            <p>Monday to Friday <br> 8:00 to 17:00</p>
+            <p>Saturday <br> 9:00 to 12 noon</p>
+            <p><strong>Please make sure to Book an Appointment to Guarantee a suitable time!</strong>
+            </p>
+        </div>
+    </div>
+
+<!-- 💵 Card 2: Rates for Consults-->
+
+    <div class="card">
+      <div class="rule-icon">
+        <ion-icon name="cash-outline"></ion-icon>
+      </div>
+      <div class="content-rule">
+        <h5>Consult Rates:</h5>
+        <p>Rates are based inline with Chiropractic Medical Aids Tariffs.<br>
+          You are personally responsible for the full settlement of your account.
+          You are more than welcome to submit your invoice to your Medical Aid for reimbursement.
+        </p>
+      </div>
+    </div>
+
+<!-- 💳 Card 3: Payment -->
+
+    <div class="card">
+      <div class="rule-icon">
+        <ion-icon name="card-outline"></ion-icon>
+      </div>
+      <div class="content-rule">
+        <h5>Payment Methods:</h5>
+        <p>Cash and Card payments (Visa/Mastercard).<br>
+          EFT payments must be made before the appointment, with proof of payment (POP) either emailed or brought along to your consultation.
+          Banking details are available on request.</p>
+      </div>
+    </div>
+
+    <!-- ❌ Card 4: Cancellations -->
+    <div class="card">
+      <div class="rule-icon">
+        <ion-icon name="hourglass-outline"></ion-icon>
+      </div>
+      <div class="content-rule">
+        <h5>Cancellations:</h5>
+        <p>
+            Missed appointments or cancellations made less than 24 hours in advance will be charged in full.
+            Your consideration is greatly appreciated.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+</section>
+
+<!-- ⭐ Testimonial Section -->
+
+<section class="container-fluid expand-lg container-testimonial-bx">
+    <div class="container-testimonial">
+                    
+<!-- ⭐ Section Title -->
+    <div class="row justify-content-center testimonial-heading">
+        <div class="col-12">
+            <h2>What Our Patients Say</h2>
+            <h4 class="testimonial-intro">Real stories.&#8287; Real healing.&#8287; Real results.</h4>
+        </div>
+    </div>
+
+<!-- ⭐ Testimonial Cards -->
+    <div class="container-testimonial">
+        <div class="row justify-content-center">
+
+            <!-- ⭐ Testimonial Card 1 -->           
+            <div class="card-testimonial">
+                <div class="imgBx">
                     <picture>
                         <source srcset="assets/image/niks.avif" type="image/avif">
                         <source srcset="assets/image/niks.webp" type="image/webp">
-                        <img src="assets/image/niks.jpg" alt="Nikita Costa"> 
+                        <img src="assets/image/niks.jpg" alt="Nikita"> 
                     </picture>
                 </div>
-                <div class="testimonial-content">
-                    <h3>Nikita Costa</h3>
+                <div class="content">
+                    <h3>Nikita Costa 1</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque obcaecati
-                        alias odio illum possimus accusantium voluptatum officiis omnis saepe impedit, quis mollitia
+                        alias
+                        odio
+                        illum possimus accusantium voluptatum officiis omnis saepe impedit, quis mollitia
                         voluptates. Tempora eius dicta quo nostrum sapiente.
                     </p>
-                    <div class="testimonial-stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <!-- <i class="fa fa-star-half-o" aria-hidden="true"></i>  half star -->
+                        <!-- <i class="fa fa-star-o" aria-hidden="true"></i>  empty star -->
+                    </span>
                 </div>
             </div>
 
-            <!-- Testimonial 2 -->
-            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
-                <div class="testimonial-image">
+<!-- ⭐ Testimonial Card 2 --> 
+
+            <div class="card-testimonial">
+                <div class="imgBx">
                     <picture>
                         <source srcset="assets/image/nonno.avif" type="image/avif">
                         <source srcset="assets/image/nonno.webp" type="image/webp">
-                        <img src="assets/image/nonno.jpg" alt="Adriano Argentin"> 
+                        <img src="assets/image/nonno.jpg" alt="nonno"> 
                     </picture>
                 </div>
-                <div class="testimonial-content">
-                    <h3>Adriano Argentin</h3>
+                <div class="content">
+                    <h3>Adriano Argentin 2</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque obcaecati
-                        alias odio illum possimus accusantium voluptatum officiis omnis saepe impedit, quis mollitia
+                        alias
+                        odio
+                        illum possimus accusantium voluptatum officiis omnis saepe impedit, quis mollitia
                         voluptates. Tempora eius dicta quo nostrum sapiente.
                     </p>
-                    <div class="testimonial-stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </span> 
                 </div>
             </div>
 
-            <!-- Testimonial 3 -->
-            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
-                <div class="testimonial-image">
+<!-- ⭐ Testimonial Card 3 -->
+
+            <div class="card-testimonial">
+                <div class="imgBx">
+                    <picture>
+                        <source srcset="assets/image/niks.avif" type="image/avif">
+                        <source srcset="assets/image/niks.webp" type="image/webp">
+                        <img src="assets/image/niks.jpg" alt="niks"> 
+                    </picture>
+                </div>
+                <div class="content">
+                    <h3>Nikita Costa 3</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque obcaecati
+                        alias
+                        odio
+                        illum possimus accusantium voluptatum officiis omnis saepe impedit, quis mollitia
+                        voluptates. Tempora eius dicta quo nostrum sapiente.
+                    </p>
+                <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </span> 
+                </div>
+            </div>
+
+<!-- ⭐ Testimonial Card 4 --> 
+
+            <div class="card-testimonial">
+                <div class="imgBx">
                     <picture>
                         <source srcset="assets/image/felipe.avif" type="image/avif">
                         <source srcset="assets/image/felipe.webp" type="image/webp">
-                        <img src="assets/image/felipe.jpg" alt="Felipe Costa"> 
+                        <img src="assets/image/felipe.jpg" alt="Felipe"> 
                     </picture>
                 </div>
-                <div class="testimonial-content">
-                    <h3>Felipe Costa</h3>
+                <div class="content">
+                    <h3>Felipe Costa 4</h3>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero itaque obcaecati
-                        alias odio illum possimus accusantium voluptatum officiis omnis saepe impedit, quis mollitia
+                        alias
+                        odio
+                        illum possimus accusantium voluptatum officiis omnis saepe impedit, quis mollitia
                         voluptates. Tempora eius dicta quo nostrum sapiente.
                     </p>
-                    <div class="testimonial-stars">
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                    </div>
+                    <span>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                        <i class="fa fa-star" aria-hidden="true"></i>
+                    </span> 
                 </div>
             </div>
-
         </div>
+    </div>
+</section>
 
+
+<!-- 📅 APPOINTMENT CTA SECTION -->
+<section class="appointment-cta">
+    <div class="appointment-container" data-aos="zoom-in" data-aos-duration="1000">
+        
+        <h2>Ready to Feel Better?</h2>
+        <h3>"Claim The Care You Deserve!"</h3>
+        <p>
+            Dr Janique or her staff will be happy to assist you.<br>
+            WhatsApp or message on <strong>+27 83 572 4444</strong>
+        </p>
+        
+        <div class="appointment-buttons">
+            <a href="contact.html" class="btn-book-cta">
+                <i class="fas fa-calendar-check"></i> Book Appointment
+            </a>
+            <a href="tel:+27835724444" class="btn-call-cta">
+                <i class="fas fa-phone"></i> Call Now
+            </a>
+        </div>
     </div>
 </section>
 
@@ -521,9 +606,9 @@
         <i class="fa-solid fa-arrow-down"></i>
     </a>
 </div>
+
 </main>
 
-<footer></footer>
 <!-- ⚓ Footer Section -->
 <footer class="foot">
     <div class="container cont-foot">
@@ -543,14 +628,10 @@
             <h6>Site Map</h6>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About Chiropractics</a></li>
-                <li><a href="modalities.html">Modalities Used</a></li>
-                <li><a href="faq.html">All You Need to Know</a></li>
-                <li><a href="conditions-treated.html">Conditions Treated</a></li>
-                <li><a href="blog.html">My Blog</a></li>
-                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About Dr Janique</a></li>
+                <li><a href="conditions-treated.html">What We Treat</a></li>
+                <li><a href="first-visit.html">Your First Visit</a></li>
                 <li><a href="contact.html">Contact</a></li>
-
             </ul>
         </div>
         <div class="sec quicklinks">
@@ -571,7 +652,7 @@
                     <div class="ion-icon"><ion-icon name="logo-whatsapp"></ion-icon></div>
                     <span>WhatsApp</span>
                 </a>
-                <a class="social-button" href="https://www.facebook.com/Dr Janique" target="_blank" rel="noopener">
+                <a class="social-button" href="https://www.facebook.com/DrJanique" target="_blank" rel="noopener">
                     <div class="ion-icon"><ion-icon name="logo-facebook"></ion-icon></div>
                     <span>Facebook</span>
                 </a>
@@ -604,19 +685,16 @@
     </div>
 </div> 
 
-<!-- ✅  Script Section -->
 
-<!-- JS Link -->
+<!-- ✅ SCRIPTS -->
 <script src="assets/js/app.js"></script>
 
 <!-- ✅ Ionicons -->
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-<!-- ✅ JavaScript Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+<!-- ✅ Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- ✅ Font Awesome -->   
 <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
@@ -627,21 +705,5 @@
     AOS.init({ offset: 1 });
 </script>
 
-<!-- ✅ Cliniko Booking Script -->
-<script type='text/javascript'>
-    window.addEventListener('message', function handleIFrameMessage(e) {
-        var clinikoBookings = document.getElementById('cliniko-49363333');
-        if (typeof e.data !== 'string') return;
-        if (e.data.search('cliniko-bookings-resize') > -1) {
-            var height = Number(e.data.split(':')[1]);
-            clinikoBookings.style.height = height + 'px';
-        }
-        e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
-    });
-</script>
-
-</body>
-</html>
-    
 </body>
 </html>
