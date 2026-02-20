@@ -1,0 +1,642 @@
+!DOCTYPE html>
+<html lang="en">
+  
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Dr Janique - Chiropractic Care</title>
+
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+
+    <!-- ✅ Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- ✅ Ionicons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+
+    <!-- ✅ AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+
+    <!-- ✅ Your custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+
+<!-- 🔝 SIMPLIFIED HEADER & NAVIGATION -->
+<header class="fixed-top">
+    
+<!-- Single Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <a href="tel:+27835724444">
+                <i class="fa-solid fa-phone"></i> +27 83 572 4444
+            </a>
+            <span class="top-bar-divider">|</span>
+            <a href="contact.html">
+                <i class="fa-solid fa-calendar-check"></i> Book Appointment
+            </a>
+        </div>
+    </div>
+
+<!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            
+            <!-- Logo, Name & Practice Name -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/image/logo.png" alt="Dr Janique Logo" class="logo-img">
+                <div class="brand-text">
+                    <h5 class="titleName">Dr Janique Belli</h5>
+                    <p class="practice-name">The Chiro Wellness Connection</p>
+                </div>
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    
+                    <!-- ✅ About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">About Dr Janique</a></li>
+                            <li><a class="dropdown-item" href="modalities.html">Modalities Used</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="conditions-treated.html">What We Treat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="first-visit.html">Your First Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Registration Bar -->
+    <div class="registration-bar">
+        <p class="registration-text">
+            <strong>REGISTERED CHIROPRACTOR:</strong> (CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196
+        </p>
+    </div>
+
+</header>
+
+<main>
+<main>
+
+<!-- 📝 INTRO SECTION -->
+<section class="modalities-intro-section">
+    <div class="modalities-intro-container" data-aos="zoom-in" data-aos-duration="1000">
+        <h2>How Dr Janique Helps You Heal</h2>
+        <p>
+            Dr Janique uses a comprehensive approach to chiropractic care, combining the core foundation of chiropractic adjustments with complementary therapies tailored to your unique needs.
+        </p>
+    </div>
+</section>
+
+<!-- 🎯 THE CORE: CHIROPRACTIC ADJUSTMENT HERO -->
+<section class="adjustment-hero-section">
+    <div class="adjustment-hero-container" data-aos="fade-up" data-aos-duration="1000">
+        
+        <div class="adjustment-hero-content">
+            <h2>The Chiropractic Adjustment</h2>
+            <h3>The Foundation of Your Care</h3>
+            <p>
+                The chiropractic adjustment is the cornerstone of Dr Janique's treatment approach. Through precise, controlled movements, she restores proper alignment to your spine and joints, allowing your nervous system to function optimally and your body to heal naturally.
+            </p>
+            <p>
+                Every treatment plan is built around this core technique, with additional modalities used to enhance and support your body's healing process.
+            </p>
+            <button class="adjustment-learn-btn" data-bs-toggle="modal" data-bs-target="#adjustmentModal">
+                Learn More About Adjustments
+            </button>
+        </div>
+
+        <div class="adjustment-hero-image" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="200">
+            <!-- <picture>
+                <source srcset="assets/image/nonno.avif" type="image/avif">
+                <source srcset="assets/image/nonno.webp" type="image/webp">
+                <img src="assets/image/nonno.jpg" alt="Chiropractic Adjustment">
+            </picture> -->
+            <img src="assets/image/dan.png" alt="Chiropractic Adjustment">
+        </div>
+
+    </div>
+</section>
+
+<!-- 🔲 ADJUSTMENT MODAL -->
+<div class="modal fade modality-modal" id="adjustmentModal" tabindex="-1" aria-labelledby="adjustmentModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modality-modal-content">
+            <div class="modal-header modality-modal-header">
+                <h3 class="modal-title modality-modal-title" id="adjustmentModalLabel">The Chiropractic Adjustment</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modality-modal-body">
+                <p>
+                    The chiropractic adjustment represents the fundamental core principle of chiropractic treatment. It is used successfully to treat a variety of soft tissue disorders as well as other health problems.
+                </p>
+                <p>
+                    The adjustment or manipulation is the process of applying a quick but gentle pressure to "subluxated" vertebrae in a corrective manner. Subluxation exists when a vertebra loses its normal alignment or motion.
+                </p>
+                <p>
+                    During an adjustment, you may hear a clicking or popping sound. This is caused by gas release within the joint capsule—a natural and harmless process called cavitation.
+                </p>
+                <p>
+                    The adjustment delivers gentle movement into restricted joints and tight muscles. By encouraging proper motion, pain and inflammation are reduced.
+                </p>
+                <p>
+                    Dr Janique uses various adjustment techniques tailored to your specific needs, including:
+                </p>
+                <ul>
+                    <li>Diversified Technique</li>
+                    <li>Thompson Drop Technique</li>
+                    <li>Activator Methods</li>
+                    <li>SOT (Sacro Occipital Technique)</li>
+                    <li>And other specialized approaches</li>
+                </ul>
+                <p>
+                    The adjustments are not painful. Most patients look forward to their adjustments and experience immediate relief from pain and discomfort, improved mobility, and an increased sense of wellbeing.
+                </p>
+            </div>
+            <div class="modal-footer modality-modal-footer">
+                <a href="blog.html" class="modality-blog-btn" target="_blank">
+                    <i class="fa-solid fa-book-open"></i> Read More on Blog
+                </a>
+                <button type="button" class="btn btn-secondary modality-modal-close" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 🧰 COMPLEMENTARY MODALITIES SECTION -->
+<section id="modalities-page"> 
+    <div class="modalities-section-header" data-aos="fade-up" data-aos-duration="1000">
+        <h2>Complementary Modalities</h2>
+        <p>Additional tools to enhance and support your healing journey</p>
+    </div>
+
+    <!-- Row 1: Cards 1-3 -->
+    <div class="cont-grid-modality"> 
+        <div class="grid-container-modality">
+            <div class="card-modality">
+                <div class="modality-card-wrapper text-center">
+                    <div class="row">
+
+                        <!-- Card 1: Hypervolt -->
+                        <div class="col">
+                            <div class="modality-card modality-card-1">
+                                <div class="container-modality">
+                                    <img class="card-modality" src="assets/image/hypervolt.jpg" alt="Hypervolt Massage Gun">
+                                </div>
+                                <div class="details">
+                                    <button class="button button5" data-bs-toggle="modal" data-bs-target="#hypervoltModal">
+                                        <h3 class="details">Hypervolt / Massage Gun</h3>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 2: FAKTR -->
+                        <div class="col">
+                            <div class="modality-card modality-card-2">
+                                <div class="container-modality">
+                                    <img class="card-modality" src="assets/image/faktr.jpg" alt="FAKTR Blading">
+                                </div>
+                                <div class="details">
+                                    <button class="button button5" data-bs-toggle="modal" data-bs-target="#faktrModal">
+                                        <h3 class="details">FAKTR / Blading</h3>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 3: Dry Needling -->
+                        <div class="col">
+                            <div class="modality-card modality-card-3">
+                                <div class="container-modality">
+                                    <img class="card-modality" src="assets/image/needle.jpg" alt="Dry Needling">
+                                </div>
+                                <div class="details">
+                                    <button class="button button5" data-bs-toggle="modal" data-bs-target="#needlingModal">
+                                        <h3 class="details">Dry Needling</h3>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 2: Cards 4-6 -->
+    <div class="cont-grid-modality">
+        <div class="grid-container-modality">
+            <div class="card-modality">
+                <div class="modality-card-wrapper text-center">
+                    <div class="row">
+
+                        <!-- Card 4: Dry Cupping -->
+                        <div class="col">
+                            <div class="modality-card modality-card-4">
+                                <div class="container-modality">
+                                    <img class="card-modality" src="assets/image/cupping.jpg" alt="Dry Cupping">
+                                </div>
+                                <div class="details">
+                                    <button class="button button5" data-bs-toggle="modal" data-bs-target="#cuppingModal">
+                                        <h3 class="details">Dry Cupping</h3>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 5: Kinesiology Taping -->
+                        <div class="col">
+                            <div class="modality-card modality-card-5">
+                                <div class="container-modality">
+                                    <img class="card-modality" src="assets/image/taping.jpg" alt="Kinesiology Taping">
+                                </div>
+                                <div class="details">
+                                    <button class="button button5" data-bs-toggle="modal" data-bs-target="#tapingModal">
+                                        <h3 class="details">Kinesiology Taping</h3>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Card 6: Ergonomic Exercises -->
+                        <div class="col">
+                            <div class="modality-card modality-card-6">
+                                <div class="container-modality">
+                                    <img class="card-modality" src="assets/image/soccer.jpg" alt="Ergonomic Exercises">
+                                </div>
+                                <div class="details">
+                                    <button class="button button5" data-bs-toggle="modal" data-bs-target="#exercisesModal">
+                                        <h3 class="details">Ergonomic Exercises & Stretches</h3>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- 🔲 MODALITY MODALS -->
+
+<!-- Hypervolt Modal -->
+<div class="modal fade modality-modal" id="hypervoltModal" tabindex="-1" aria-labelledby="hypervoltLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modality-modal-content">
+            <div class="modal-header modality-modal-header">
+                <h3 class="modal-title modality-modal-title" id="hypervoltLabel">Hypervolt / Massage Gun</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modality-modal-body">
+                <p>
+                    The Hypervolt is a state-of-the-art percussion therapy device that delivers rapid, targeted pulses to muscle tissue. This advanced technology helps release tension, reduce soreness, and improve circulation.
+                </p>
+                <p>
+                    Benefits include:
+                </p>
+                <ul>
+                    <li>Reduces muscle soreness and stiffness</li>
+                    <li>Improves blood flow and circulation</li>
+                    <li>Speeds up recovery after injury or intense activity</li>
+                    <li>Enhances flexibility and range of motion</li>
+                    <li>Complements chiropractic adjustments perfectly</li>
+                </ul>
+                <p>
+                    Dr Janique uses the Hypervolt strategically before or after adjustments to prepare muscles for treatment or to extend the benefits of your session.
+                </p>
+            </div>
+            <div class="modal-footer modality-modal-footer">
+                <a href="blog.html" class="modality-blog-btn" target="_blank">
+                    <i class="fa-solid fa-book-open"></i> Read More on Blog
+                </a>
+                <button type="button" class="btn btn-secondary modality-modal-close" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- FAKTR Modal -->
+<div class="modal fade modality-modal" id="faktrModal" tabindex="-1" aria-labelledby="faktrLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modality-modal-content">
+            <div class="modal-header modality-modal-header">
+                <h3 class="modal-title modality-modal-title" id="faktrLabel">FAKTR / Blading</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modality-modal-body">
+                <p>
+                    FAKTR (Functional and Kinetic Treatment with Rehab) is an innovative approach using specialized instruments to treat soft tissue restrictions and scar tissue.
+                </p>
+                <p>
+                    This technique is particularly effective for:
+                </p>
+                <ul>
+                    <li>Breaking down scar tissue and adhesions</li>
+                    <li>Treating chronic pain and injuries</li>
+                    <li>Improving tissue mobility and flexibility</li>
+                    <li>Accelerating healing in injured areas</li>
+                    <li>Addressing fascial restrictions</li>
+                </ul>
+                <p>
+                    Dr Janique combines FAKTR with functional movement to restore proper biomechanics and reduce pain effectively.
+                </p>
+            </div>
+            <div class="modal-footer modality-modal-footer">
+                <a href="blog.html" class="modality-blog-btn" target="_blank">
+                    <i class="fa-solid fa-book-open"></i> Read More on Blog
+                </a>
+                <button type="button" class="btn btn-secondary modality-modal-close" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Dry Needling Modal -->
+<div class="modal fade modality-modal" id="needlingModal" tabindex="-1" aria-labelledby="needlingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modality-modal-content">
+            <div class="modal-header modality-modal-header">
+                <h3 class="modal-title modality-modal-title" id="needlingLabel">Dry Needling</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modality-modal-body">
+                <p>
+                    Dry needling uses thin, sterile needles to target myofascial trigger points—tight knots in muscles that cause pain and restrict movement.
+                </p>
+                <p>
+                    This technique:
+                </p>
+                <ul>
+                    <li>Releases muscle trigger points instantly</li>
+                    <li>Reduces chronic muscle pain and tension</li>
+                    <li>Improves blood flow to affected areas</li>
+                    <li>Restores normal muscle function</li>
+                    <li>Complements chiropractic adjustments</li>
+                </ul>
+                <p>
+                    Many patients experience immediate relief from pain and improved range of motion after dry needling treatment.
+                </p>
+            </div>
+            <div class="modal-footer modality-modal-footer">
+                <a href="blog.html" class="modality-blog-btn" target="_blank">
+                    <i class="fa-solid fa-book-open"></i> Read More on Blog
+                </a>
+                <button type="button" class="btn btn-secondary modality-modal-close" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Dry Cupping Modal -->
+<div class="modal fade modality-modal" id="cuppingModal" tabindex="-1" aria-labelledby="cuppingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modality-modal-content">
+            <div class="modal-header modality-modal-header">
+                <h3 class="modal-title modality-modal-title" id="cuppingLabel">Dry Cupping</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modality-modal-body">
+                <p>
+                    Cupping therapy is an ancient form of alternative medicine that has been practiced by Egyptian, Chinese, and Middle Eastern cultures for centuries.
+                </p>
+                <p>
+                    Cupping is performed by placing suction cups on the skin to create a vacuum. The vacuum lifts the skin and underlying tissues upwards, promoting blood circulation and tissue relaxation.
+                </p>
+                <p>
+                    Benefits of dry cupping:
+                </p>
+                <ul>
+                    <li>Relieves deep muscle tension and knots</li>
+                    <li>Improves circulation and promotes healing</li>
+                    <li>Reduces inflammation naturally</li>
+                    <li>Enhances lymphatic drainage</li>
+                    <li>Provides deep tissue release</li>
+                    <li>Increases mobility and range of motion</li>
+                </ul>
+                <p>
+                    Dr Janique uses cupping strategically to address a variety of musculoskeletal issues, including back, neck, joint pain, and muscle tension.
+                </p>
+            </div>
+            <div class="modal-footer modality-modal-footer">
+                <a href="blog.html" class="modality-blog-btn" target="_blank">
+                    <i class="fa-solid fa-book-open"></i> Read More on Blog
+                </a>
+                <button type="button" class="btn btn-secondary modality-modal-close" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Kinesiology Taping Modal -->
+<div class="modal fade modality-modal" id="tapingModal" tabindex="-1" aria-labelledby="tapingLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modality-modal-content">
+            <div class="modal-header modality-modal-header">
+                <h3 class="modal-title modality-modal-title" id="tapingLabel">Kinesiology Taping</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modality-modal-body">
+                <p>
+                    Kinesiology tape is a flexible, therapeutic tape applied to muscles and joints to provide support without restricting movement.
+                </p>
+                <p>
+                    How it helps:
+                </p>
+                <ul>
+                    <li>Supports injured muscles and joints</li>
+                    <li>Reduces pain and inflammation</li>
+                    <li>Improves circulation and lymphatic flow</li>
+                    <li>Allows full range of motion during healing</li>
+                    <li>Extends the benefits of your adjustment</li>
+                    <li>Helps maintain proper posture and alignment</li>
+                </ul>
+                <p>
+                    Dr Janique applies kinesiology tape strategically to support your body between visits and accelerate recovery.
+                </p>
+            </div>
+            <div class="modal-footer modality-modal-footer">
+                <a href="blog.html" class="modality-blog-btn" target="_blank">
+                    <i class="fa-solid fa-book-open"></i> Read More on Blog
+                </a>
+                <button type="button" class="btn btn-secondary modality-modal-close" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Ergonomic Exercises Modal -->
+<div class="modal fade modality-modal" id="exercisesModal" tabindex="-1" aria-labelledby="exercisesLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content modality-modal-content">
+            <div class="modal-header modality-modal-header">
+                <h3 class="modal-title modality-modal-title" id="exercisesLabel">Ergonomic Exercises & Stretches</h3>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body modality-modal-body">
+                <p>
+                    Your recovery doesn't stop when you leave the office. Dr Janique provides personalized exercises and stretches tailored to your specific condition and lifestyle.
+                </p>
+                <p>
+                    Your home care plan may include:
+                </p>
+                <ul>
+                    <li>Gentle stretches to maintain flexibility</li>
+                    <li>Strengthening exercises for stability</li>
+                    <li>Posture correction techniques</li>
+                    <li>Ergonomic adjustments for work and daily life</li>
+                    <li>Movement patterns to prevent re-injury</li>
+                    <li>Activity and lifestyle modifications</li>
+                </ul>
+                <p>
+                    These simple strategies empower you to take an active role in your recovery and maintain the benefits of your chiropractic care long-term.
+                </p>
+                <p>
+                    Dr Janique will demonstrate each exercise and answer any questions to ensure you feel confident performing them at home. Your success is our priority!
+                </p>
+            </div>
+            <div class="modal-footer modality-modal-footer">
+                <a href="blog.html" class="modality-blog-btn" target="_blank">
+                    <i class="fa-solid fa-book-open"></i> Read More on Blog
+                </a>
+                <button type="button" class="btn btn-secondary modality-modal-close" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ⬇️ Scroll Icon -->
+<div class="scroll">
+    <a href="#"><i class="fa-solid fa-arrow-down"></i></a>
+</div>
+
+</main>
+
+<!-- ⚓ Footer Section -->
+<footer class="foot">
+    <div class="container cont-foot">
+        <div class="sec aboutus">
+            <h6>The Chiro Wellness Connection</h6>
+            <ul>
+                <li><a href="#" class="padded-text">Natural Health Centre</a></li>
+                <li><a href="#" class="icon-text"><i class="fa-solid fa-location-dot"></i>87 6th Street</a></li>
+                <li class="text-indent">Boksburg North</li>
+            </ul>
+            <ul>
+                <li><a href="tel:+27835724444" class="icon-text"><i class="fa-solid fa-phone"></i>+ 27 83 572 4444</a></li>
+                <li><a href="mailto:janiquechiro@gmail.com" class="icon-text"><i class="fa-solid fa-envelope"></i>janiquechiro@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h6>Site Map</h6>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Dr Janique</a></li>
+                <li><a href="conditions-treated.html">What We Treat</a></li>
+                <li><a href="first-visit.html">Your First Visit</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h6>Practice Hours</h6>
+            <ul>
+                <li><a href="#" class="icon-text"><i class="fas fa-calendar-check"></i>Monday - Friday:<br><span class="text-indent">08:00 - 17:00</span></a></li>
+                <li><a href="#" class="icon-text"><i class="fas fa-calendar-check"></i>Saturday:<br><span class="text-indent">09:00 - 12:00</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="icon-text"><i class="fa-solid fa-truck-medical"></i>Emergency (After Hours)</a></li>
+                <li><a href="tel:+27835724444" class="icon-text"><i class="fa-solid fa-phone"></i>+27 83 572 4444</a></li>
+            </ul> 
+        </div>
+        <div class="sec social-button">
+            <h6>Social Media</h6>
+            <div class="wrapper">
+                <a class="social-button" target="_blank" href="https://wa.me/27835724444">
+                    <div class="ion-icon"><ion-icon name="logo-whatsapp"></ion-icon></div>
+                    <span>WhatsApp</span>
+                </a>
+                <a class="social-button" href="https://www.facebook.com/DrJanique" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-facebook"></ion-icon></div>
+                    <span>Facebook</span>
+                </a>
+                <a class="social-button" href="https://www.instagram.com/drjaniquechiropractic" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-instagram"></ion-icon></div>
+                    <span>Instagram</span>
+                </a>
+                <a class="social-button" href="https://www.tiktok.com/@drjaniquebelli" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-tiktok"></ion-icon></div>
+                    <span>TikTok</span>
+                </a>
+            </div>
+            <div class="sec logo">
+                <a href="#" class="logo-img center">
+                    <img src="assets/image/footerlogo.png" alt="The Chiro Wellness Connection Logo">
+                </a>
+            </div> 
+        </div>
+    </div>
+</footer>
+    
+<!-- © Copyright Section -->
+<div>
+    <div class="copyrightText">
+        <span>
+            <p>2025 © Luigina Argentin. All Rights Reserved.</p>
+            <p>Terms of use</p>
+            <p>Privacy policy</p>
+        </span>
+    </div>
+</div> 
+
+
+<!-- ✅ SCRIPTS -->
+<script src="assets/js/app.js"></script>
+
+<!-- ✅ Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+<!-- ✅ Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- ✅ Font Awesome -->   
+<script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
+
+<!-- ✅ AOS Animation -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ offset: 1 });
+</script>
+
+</body>
+</html>
