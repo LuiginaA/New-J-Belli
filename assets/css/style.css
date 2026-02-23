@@ -155,6 +155,9 @@ body {
 /* ============================================ */
 /* 🔝 HEADER & NAVIGATION                      */
 /* ============================================ */
+/* ============================================ */
+/* 🔝 HEADER & NAVIGATION - UPDATED            */
+/* ============================================ */
 
 .fixed-top {
   position: fixed;
@@ -206,13 +209,15 @@ body {
 .navbar {
   background-color: var(--bg-color-a);
   padding: 15px 0;
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);  /* ✅ Underline like footer */
 }
 
 .navbar-brand {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   text-decoration: none;
+  gap: 15px;
 }
 
 .logo-img {
@@ -248,18 +253,11 @@ body {
   margin-top: 5px;
 }
 
-.navbar-brand {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  text-decoration: none;
-  gap: 15px;
-}
-
 .navbar-nav {
   gap: 5px;
 }
 
+/* ✅ NEW NAVBAR LINK STYLE - UNDERLINE ON HOVER (LIKE FOOTER) */
 .nav-link {
   font-family: var(--ff-1);
   font-size: 1rem;
@@ -268,14 +266,47 @@ body {
   padding: 10px 20px !important;
   border-radius: 8px;
   transition: all 0.3s ease;
+  position: relative;                /* ✅ For underline positioning */
+  background-color: transparent;     /* ✅ No background */
 }
 
-.nav-link:hover,
+/* ✅ Underline effect (same as footer) */
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 20px;                        /* ✅ Matches padding */
+  right: 20px;                       /* ✅ Matches padding */
+  bottom: 8px;                       /* ✅ Position below text */
+  height: 2px;
+  width: 0%;
+  background-color: var(--bg-color-c);
+  transition: width 0.3s ease;
+}
+
+/* ✅ Hover effect - slide underline and shift right */
+.nav-link:hover {
+  transform: translateX(8px);        /* ✅ Slide right like footer */
+  color: var(--bg-color-c) !important;
+  background-color: transparent;     /* ✅ NO background color */
+}
+
+.nav-link:hover::after {
+  width: calc(100% - 40px);          /* ✅ Underline expands */
+}
+
+/* ✅ Active link style */
 .nav-link.active {
-  background-color: var(--bg-color-d);
   color: var(--text-color-a) !important;
+  background-color: transparent;     /* ✅ NO background */
+  font-weight: 700;
 }
 
+.nav-link.active::after {
+  width: calc(100% - 40px);          /* ✅ Underline visible on active */
+  background-color: var(--text-color-a);
+}
+
+/* Navbar toggler (mobile hamburger) */
 .navbar-toggler {
   border: 2px solid var(--bg-color-c);
   padding: 8px 12px;
@@ -286,8 +317,6 @@ body {
   color: var(--bg-color-c);
   font-size: 1.3rem;
 }
-
-/* ADD THIS AFTER THE EXISTING NAVBAR STYLES: */
 
 /* ========== DROPDOWN MENU ========== */
 
@@ -311,7 +340,7 @@ body {
   min-width: 200px;
 }
 
-/* Dropdown items */
+/* ✅ Dropdown items - same underline effect */
 .dropdown-item {
   font-family: var(--ff-1);
   font-size: 0.95rem;
@@ -319,22 +348,38 @@ body {
   color: var(--bg-color-c);
   padding: 10px 20px;
   transition: all 0.3s ease;
+  position: relative;
+  background-color: transparent;
+}
+
+.dropdown-item::after {
+  content: "";
+  position: absolute;
+  left: 20px;
+  bottom: 5px;
+  width: 0%;
+  height: 2px;
+  background-color: var(--bg-color-c);
+  transition: width 0.3s ease;
 }
 
 .dropdown-item:hover,
 .dropdown-item:focus {
-  background-color: var(--bg-color-d);
+  background-color: transparent;     /* ✅ NO background */
   color: var(--text-color-a);
+  transform: translateX(8px);        /* ✅ Slide right */
 }
 
-/* Active dropdown parent gets same highlight as other nav items */
+.dropdown-item:hover::after {
+  width: calc(100% - 40px);
+}
+
+/* ✅ Dropdown parent link - keep underline effect */
 .nav-item.dropdown .nav-link.show,
 .nav-item.dropdown:hover .nav-link {
-  background-color: var(--bg-color-d);
-  color: var(--text-color-a);
+  background-color: transparent;     /* ✅ NO background */
+  color: var(--bg-color-c) !important;
 }
-
-
 
 /* Registration Bar */
 .registration-bar {
@@ -369,7 +414,7 @@ body {
   }
 }
 
-/* ==========NAVBAR MOBILE RESPONSIVENESS ========== */
+/* ========== NAVBAR MOBILE RESPONSIVENESS ========== */
 
 /* 📱 991px - Small Laptops */
 @media (max-width: 991px) {
@@ -389,14 +434,20 @@ body {
   }
   
   .dropdown-item:hover {
-    background-color: var(--bg-color-d);
+    background-color: transparent;   /* ✅ Keep transparent on mobile */
     border-radius: 8px;
+  }
+  
+  /* ✅ Remove transform on mobile (no slide effect) */
+  .nav-link:hover,
+  .dropdown-item:hover {
+    transform: none;
   }
 }
 
 /* 📱 768px and below */
 @media (max-width: 768px) {
-.top-bar {
+  .top-bar {
     padding: 8px 0;
   }
     
@@ -458,7 +509,7 @@ body {
 
 /* 📱 320px and below */
 @media (max-width: 320px) {
-.brand-text {
+  .brand-text {
     margin-left: -8px;
     padding-right: 10px;
   }
