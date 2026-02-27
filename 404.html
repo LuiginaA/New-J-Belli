@@ -1,38 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-  <title>Dr Janique</title>
+    <title>Dr Janique - Chiropractic Care</title>
 
-  <!-- ✅ Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
+    <!-- ✅ Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> 
 
-  <!-- ✅ Font Awesome for icons -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <!-- ✅ Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 
-  <!-- ✅ Ionicons -->
-  <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+    <!-- ✅ Ionicons -->
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
 
-  <!-- ✅ Hover effects -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.1/css/hover-min.css">
+    <!-- ✅ AOS Animation CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 
-  <!-- ✅ AOS Animation CSS (only one) -->
-  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
+    <!-- ✅ Your custom styles -->
+    <link rel="stylesheet" href="assets/css/style.css">
 
-  <!-- ✅ Your custom styles -->
-  <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- ✅ JavaScript file (if you wrote one) -->
-  <!-- <script src="script.js" defer></script>  -->
+    <!-- NEW! Blog styles -->
+    <link rel="stylesheet" href="assets/css/blog.css">
+    
 </head>
 
 <body>
 
- <main>
+<!-- 🔝 SIMPLIFIED HEADER & NAVIGATION -->
+<header class="fixed-top">
+    
+<!-- Single Top Bar -->
+    <div class="top-bar">
+        <div class="top-bar-content">
+            <a href="tel:+27835724444">
+                <i class="fa-solid fa-phone"></i> +27 83 572 4444
+            </a>
+            <span class="top-bar-divider">|</span>
+            <a href="contact.html">
+                <i class="fa-solid fa-calendar-check"></i> Book Appointment
+            </a>
+        </div>
+    </div>
+
+<!-- Main Navigation -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            
+            <!-- Logo, Name & Practice Name -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/image/logo.png" alt="Dr Janique Logo" class="logo-img">
+                <div class="brand-text">
+                    <h5 class="titleName">Dr Janique Belli</h5>
+                    <p class="practice-name">The Chiro Wellness Connection</p>
+                </div>
+            </a>
+
+            <!-- Mobile Toggle Button -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <i class="fa fa-bars"></i>
+            </button>
+
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    
+                    <!-- ✅ About Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="aboutDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                            <li><a class="dropdown-item" href="about.html">About Dr Janique</a></li>
+                            <li><a class="dropdown-item" href="modalities.html">Modalities Used</a></li>
+                            <li><a class="dropdown-item" href="faq.html">FAQ</a></li>
+                        </ul>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="conditions-treated.html">What We Treat</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="first-visit.html">Your First Visit</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+<!-- ✅ NEW LEGAL DROPDOWN -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="legalDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Legal
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="legalDropdown">
+                            <li><a class="dropdown-item" href="terms.html">Terms & Conditions</a></li>
+                            <li><a class="dropdown-item" href="privacy.html">Privacy Policy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+<!-- Registration Bar -->
+    <div class="registration-bar">
+        <p class="registration-text">
+            <strong>REGISTERED CHIROPRACTOR:</strong> (CHIRO.) S.A. | MCASA | Practice N° 0872458 | AHPCSA N° A12196
+        </p>
+    </div>
+
+</header>
+
+<main>
         
 <section class="container_404">
     <div class="row">
@@ -63,55 +150,110 @@
     </div>
 </section>
 
+<!-- ⬇️ Scroll Icon -->
+<div class="scroll">
+    <a href="#">
+        <i class="fa-solid fa-arrow-down"></i>
+    </a>
+</div>
+
 </main>
 
-<!-- JS Link -->
+<!-- ⚓ Footer Section -->
+<!-- ⚓ Footer Section - ORIGINAL -->
+<footer class="foot">
+    <div class="container cont-foot">
+        <div class="sec aboutus">
+            <h6>The Chiro Wellness Connection</h6>
+            <ul>
+                <li><a href="#" class="padded-text">Natural Health Centre</a></li>
+                <li><a href="#" class="icon-text"><i class="fa-solid fa-location-dot"></i>87 6th Street</a></li>
+                <li class="text-indent">Boksburg North</li>
+            </ul>
+            <ul>
+                <li><a href="tel:+27835724444" class="icon-text"><i class="fa-solid fa-phone"></i>+ 27 83 572 4444</a></li>
+                <li><a href="mailto:janiquechiro@gmail.com" class="icon-text"><i class="fa-solid fa-envelope"></i>janiquechiro@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h6>Site Map</h6>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Dr Janique</a></li>
+                <li><a href="conditions-treated.html">What We Treat</a></li>
+                <li><a href="first-visit.html">Your First Visit</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>  
+                <li><a href="privacy.html">Privacy Policy</a></li>   
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+        <div class="sec quicklinks">
+            <h6>Practice Hours</h6>
+            <ul>
+                <li><a href="#" class="icon-text"><i class="fas fa-calendar-check"></i>Monday - Friday:<br><span class="text-indent">08:00 - 17:00</span></a></li>
+                <li><a href="#" class="icon-text"><i class="fas fa-calendar-check"></i>Saturday:<br><span class="text-indent">09:00 - 12:00</span></a></li>
+            </ul>
+            <ul>
+                <li><a href="#" class="icon-text"><i class="fa-solid fa-truck-medical"></i>Emergency (After Hours)</a></li>
+                <li><a href="tel:+27835724444" class="icon-text"><i class="fa-solid fa-phone"></i>+27 83 572 4444</a></li>
+            </ul> 
+        </div>
+        <div class="sec social-button">
+            <h6>Social Media</h6>
+            <div class="wrapper">
+                <a class="social-button" target="_blank" href="https://wa.me/27835724444">
+                    <div class="ion-icon"><ion-icon name="logo-whatsapp"></ion-icon></div>
+                    <span>WhatsApp</span>
+                </a>
+                <a class="social-button" href="https://www.facebook.com/DrJanique" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-facebook"></ion-icon></div>
+                    <span>Facebook</span>
+                </a>
+                <a class="social-button" href="https://www.instagram.com/drjaniquechiropractic" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-instagram"></ion-icon></div>
+                    <span>Instagram</span>
+                </a>
+                <a class="social-button" href="https://www.tiktok.com/@drjaniquebelli" target="_blank" rel="noopener">
+                    <div class="ion-icon"><ion-icon name="logo-tiktok"></ion-icon></div>
+                    <span>TikTok</span>
+                </a>
+            </div>
+            <div class="sec logo">
+                <a href="#" class="logo-img center">
+                    <img src="assets/image/footerlogo.png" alt="The Chiro Wellness Connection Logo">
+                </a>
+            </div> 
+        </div>
+    </div>
+    
+    <!-- Copyright inside footer -->
+    <div class="copyrightText">
+        <span>
+            <p>2025 © Luigina Argentin. All Rights Reserved.</p>
+        </span>
+    </div>
+</footer>
+
+
+<!-- ✅ SCRIPTS -->
 <script src="assets/js/app.js"></script>
 
-<!----- Script Section ----->
-
 <!-- ✅ Ionicons -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 
-   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-   <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
-
-<!--✅ JavaScript Bootstrap Bundle with Popper -->
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-    crossorigin="anonymous"></script>
+<!-- ✅ Bootstrap Bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 <!-- ✅ Font Awesome -->   
-
-    <script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
-
-
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script> -->
+<script src="https://kit.fontawesome.com/8d7a70aa9f.js" crossorigin="anonymous"></script>
 
 <!-- ✅ AOS Animation -->
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-        offset:1,
-        });
-    </script> 
-
-<!----- Clinico Link ----->
-<!-- ✅ Cliniko Booking Script -->
-
-    <script type='text/javascript'>
-        window.addEventListener('message', function handleIFrameMessage(e) {
-            var clinikoBookings = document.getElementById('cliniko-49363333');
-            if (typeof e.data !== 'string') return;
-            if (e.data.search('cliniko-bookings-resize') > -1) {
-                var height = Number(e.data.split(':')[1]);
-                clinikoBookings.style.height = height + 'px';
-            }
-            e.data.search('cliniko-bookings-page') > -1 && clinikoBookings.scrollIntoView();
-        });
-    </script> 
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init({ offset: 1 });
+</script>
 
 </body>
 </html>
