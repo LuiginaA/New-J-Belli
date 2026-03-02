@@ -196,9 +196,15 @@ body {
   transition: color 0.3s ease;
 }
 
-.top-bar-content a:hover {
+/* .top-bar-content a:hover {
   color: var(--green-accent);
-}
+} */
+
+.top-bar-content a:hover {
+  border: 2px solid var(--bg-color-a);
+  border-radius: 5px;
+  padding: 6px;
+} 
 
 .top-bar-content i {
   margin-right: 5px;
@@ -234,11 +240,12 @@ body {
 
 .titleName {
   font-family: var(--ff-1);
-  font-size: 1.2rem;
+  /* font-size: 1.2rem; */
+  font-size: 1.4rem;
   font-weight: 800;
   font-style: italic;
   color: #4d4c4b;
-  text-shadow: 0.5px 0.5px var(--green-accent);
+  /* text-shadow: 0.5px 0.5px var(--green-accent); */
   margin: 0;
 }
 
@@ -652,7 +659,7 @@ body {
   font-weight: 900;
   font-style: italic;
   color: var(--bg-color-c);
-  text-shadow: 2px 2px 0 rgba(56, 226, 9, 0.3);
+  /* text-shadow: 2px 2px 0 rgba(56, 226, 9, 0.3); */
   margin-bottom: 25px;
   line-height: 1.2;
   text-align: center;
@@ -1456,6 +1463,7 @@ body {
   width: 100%;
   height: 150px;
   background: #232949;
+   background: #252525;
   border-radius: 15px;
   border-top-left-radius: 0;
   padding: 0 30px;  
@@ -1474,6 +1482,7 @@ body {
   height: 80px;
   width: 50%;
   background: #232949;
+  background: #252525;
   border-top: 10px solid var(--bg-color-d);
   border-right: 10px solid var(--bg-color-d);
   border-top-right-radius: 25px;  
@@ -1499,6 +1508,7 @@ body {
   background: transparent;
   border-radius: 50%;
   box-shadow: -10px 10px 0 #232949;
+    box-shadow: -10px 10px 0 #252525;
 }
 
 .card-reasonInfo .reason-content .reason-title a {
