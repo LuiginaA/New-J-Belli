@@ -449,6 +449,20 @@ body {
   color: var(--bg-color-c);
 }
 
+/* Legal dropdown download icons */
+.dropdown-item .fa-download {
+  margin-left: 8px;
+  font-size: 0.85rem;
+  color: var(--bg-color-c);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.dropdown-item:hover .fa-download {
+  opacity: 1;
+  transform: translateY(2px);
+}
+
 /* ========== REGISTRATION BAR ========== */
 
 .registration-bar {
@@ -6011,6 +6025,19 @@ footer .cont-foot .quicklinks ul li a {
   display: inline-block;
   transition: all 0.3s ease;   /* ⭐ Smooth animation */
   position: relative;
+}
+
+/* Footer legal download icons */
+footer .cont-foot .quicklinks ul li a .fa-download {
+  margin-left: 6px;
+  font-size: 0.85rem;
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+footer .cont-foot .quicklinks ul li a:hover .fa-download {
+  opacity: 1;
+  transform: translateY(2px);
 }
 
 /* ⚓ Underline Effect */
