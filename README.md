@@ -66,11 +66,10 @@ drjanique-website/
 ├── blog.html                   # Blog list page
 ├── blog-post.html              # Blog post template
 ├── blog-post-2.html            # Individual blog posts
-├── contact.html                # Contact & booking
 ├── terms.html                  # Terms & Conditions
 ├── privacy.html                # Privacy Policy (POPI Act)
 ├── 404.html                    # Error page
-│
+│── contact.html                # Contact & booking
 ├── assets/
 │   ├── css/
 │   │   ├── style.css           # Main stylesheet
@@ -489,18 +488,31 @@ Upgrade to **Mailchimp** when you reach 20+ subscribers:
 - **Google Fonts** - Typography (Merriweather, Lato)
 - **FormSubmit.co** - Form handling service
 
+
 ### Development
 - **Design & Development**: [Your name]
 - **Content**: Dr Janique
 - **AI Development Assistant**: Claude (Anthropic)
 - **Inspiration**: Modern healthcare website design principles
+- **Kevin Powell** - Creating an inverted border-radius with CSS https://www.youtube.com/@KevinPowell
+- **https://squoosh.app/** - To make images more adaptable
+To down scale images for better AOS animation
+- **https://www.remove.bg/** -To remove Backgrounds from images
+
 
 ### Special Thanks
 - Bootstrap team for responsive framework
 - Font Awesome for comprehensive icon set
 - AOS library for smooth animations
 - FormSubmit for free form handling
-
+- Online Tutorials
+- Kevin Powell
+- Coding yaar
+- Tahmid Ahmed
+- Coding 2Go
+- Code writer
+- CodingNepal
+- 
 ---
 
 ## 📄 License
